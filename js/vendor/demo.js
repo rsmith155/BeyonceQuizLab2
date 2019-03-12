@@ -87,6 +87,7 @@ function check(){
 	document.getElementById("information").innerHTML="Here are some facts. ";
 
 	for (var property1 in wrong) {
+		console.log(property1)
   document.getElementById("information").innerHTML.appendChild([wrong[property1-1]]);
 }
 
