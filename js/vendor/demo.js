@@ -84,11 +84,10 @@ function check(){
 	document.getElementById("message").innerHTML = messages[score];
 	document.getElementById("number_correct").innerHTML = titles[score];
 	document.getElementById("song").innerHTML="Your song is " + songs[score];
-	document.getElementById("information").innerHTML="Here are some facts. ";
+	document.getElementById("information").innerHTML="Here are some facts.";
 
 	for (var property1 in wrong) {
-		console.log(property1)
-  document.getElementById("information").appendChild([wrong[property1-1]]);
+  document.getElementById("information").innerHTML.appendChild([wrong[property1-1]]);
 }
 
 
