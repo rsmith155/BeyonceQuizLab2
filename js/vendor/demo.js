@@ -56,8 +56,8 @@ function check(){
 	var messages = ["Welcome to the illustrious Alpha chapter of BAK. You are clearly a Beyonce STAN and WORTHY of the black and gold. Stay in formation, make err'body mad. ", "You wake up…Flawless. Post up...Flawless. Your quiz score...(nearly) Flawless. You know enough to stand by the Beyhive and not get stung.", " To My dearest Michelle, youve left Destinys Child and are on your way to stardom, but you have a long way to go.", "Hey, farrah :("];
 	var titles = ["BΔK (Alpha Chapter)","Beyhive Adjacent","A Child of Destiny","Destinys (Disowned)Step-Child"]
 	var songs = ["'Everybody Mad'", "'***Flawless'", "'Me, Myself and I'", "'No,No,No,No Pt.1'"]
-	var facts =["Beyoncé was born on September 4, 1981 (as she whispers in the intro to 'Get Me Bodied'). According to the Astro Twins, she was born at 10 AM, which makes her a Virgo sun with a Scorpio moon and Libra rising."
-	,"Beyoncé Giselle Knowles is from Houston, Texas.", "As quoted from her song “Formation,” she carries hot-sauce in her purse, a must have for a southerner in need of spice at any given time.", "She released her first solo album, Dangerously in Love (2003), during the hiatus of Destiny's Child.]"];
+	var facts =["Beyoncé was born on September 4, 1981 (as she whispers in the intro to 'Get Me Bodied'). According to the Astro Twins, she was born at 10 AM, which makes her a Virgo sun with a Scorpio moon and Libra rising.",
+	"Beyoncé Giselle Knowles is from Houston, Texas.", "As quoted from her song “Formation,” she carries hot-sauce in her purse, a must have for a southerner in need of spice at any given time.", "She released her first solo album, Dangerously in Love (2003), during the hiatus of Destiny's Child.]"];
 	var score;
 
 	//calculates score that corresponds to the list index of answers based on # of correct answers
@@ -86,7 +86,7 @@ function check(){
 	document.getElementById("song").innerHTML="Your song is " + songs[score];
 
 	for (var property1 in wrong) {
-  document.getElementById("information").innerHTML="Here are some facts" + facts[score];
+  document.getElementById("information").innerHTML="Here are some facts." + facts[wrong[property1-1]];
 }
 
 
