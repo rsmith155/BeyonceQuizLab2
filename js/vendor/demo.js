@@ -1,5 +1,4 @@
 
-
 //function called when quiz is submitted
 function check(){
     //sets variables to equal the selected answers
@@ -80,7 +79,7 @@ function check(){
 	}
 
   
-	//change and display results
+	//change and display results - Change to opening a new page based on score
 	document.getElementById("existing-iframe").src=vids[score];
 	document.getElementById("cresult").style.display="block";
 	document.getElementById("message").innerHTML = messages[score];
@@ -99,10 +98,15 @@ function check(){
 	var element = document.getElementById("cresult");
 	element.scrollIntoView({ behavior: 'smooth' });
 
+	console.log("number correct"+correct);
+
 
 	
 	}
 	
+//<script type="text/javascript">
+//window.open ('YourNewPage.htm','_self',false)
+//</script>
 
 			
 			
