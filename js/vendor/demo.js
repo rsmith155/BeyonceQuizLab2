@@ -98,7 +98,7 @@ function check(){
 	var element = document.getElementById("cresult");
 	element.scrollIntoView({ behavior: 'smooth' });
 
-	console.log("number correct"+correct);
+	console.log("You got "+correct+ " questions correct.");
 
 
 	
