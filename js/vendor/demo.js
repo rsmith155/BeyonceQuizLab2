@@ -4,14 +4,13 @@ function info(){
 	document.getElementById("tips").innerHTML=localStorage.getItem("_holder");
 	var newRight=localStorage.getItem("_right");
 	var array = JSON.parse("[" + newRight + "]");
-	console.log("You got questions "+array + "correct.");
+	console.log("You got questions "+array + " correct.");
 	
 
 
 //Gets wrong answers and adds them to results pages
 		for (var answers in array){
 		var num="q"+String(array[answers]);
-		console.log(num);
 		document.getElementById(String(num)).remove();
 		
 	}
