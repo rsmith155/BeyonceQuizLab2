@@ -87,7 +87,7 @@ function check(){
 	var titles = ["BΔK (Alpha Chapter)","Beyhive Adjacent","A Child of Destiny","Destinys (Disowned)Step-Child"]
 	var songs = ["'Everybody Mad'", "'***Flawless'", "'Me, Myself and I'", "'No,No,No,No Pt.1'"]
 	var facts =["<br/>-Beyoncé was born on September 4, 1981 (as she whispers in the intro to 'Get Me Bodied'). According to the Astro Twins, she was born at 10 AM, which makes her a Virgo sun with a Scorpio moon and Libra rising.<br><br>",
-	"-Beyoncé Giselle Knowles is from Houston, Texas.<br><br>", " As quoted from her song “Formation,” she carries hot-sauce in her purse, a must have for a southerner in need of spice at any given time.<br><br>", "-She released her first solo album, Dangerously in Love (2003), during the hiatus of Destiny's Child.<br><br>",
+	"-Beyoncé Giselle Knowles is from Houston, Texas.<br><br>", "-As quoted from her song “Formation,” she carries hot-sauce in her purse, a must have for a southerner in need of spice at any given time.<br><br>", "-She released her first solo album, Dangerously in Love (2003), during the hiatus of Destiny's Child.<br><br>",
 	"-Beyonce and Jay-Z, named their new daughter Rumi and son Sir -- even more distinctive names than the one they gave their first child, Blue Ivy. <br><br>", "-Formed in 1997 in Houston, Texas, Destiny's Child members began their musical career as Girl's Tyme, formed in 1990, comprising Knowles, Rowland, LaTavia Roberson, and LeToya Luckett.<br><br>"];
 	var score;
 	var playlists =[];
