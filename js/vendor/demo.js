@@ -64,22 +64,27 @@ function check(){
 	//calculates score that corresponds to the list index of answers based on # of correct answers
 	if (correct <=2) {
 		score = 3;
+		window.open ('farrah.html','_self',false)
 	}
 
 	if (correct == 3) {
 		score = 2;
+		window.open ('michelle.html','_self',false)
 	}
 
 	if (correct > 3 && correct < 6) {
 		score = 1;
+		window.open ('flawless.html','_self',false)
 	}
 
 	if (correct == 6) {
 		score = 0;
+		window.open ('BΔK .html','_self',false)
 	}
 
-  
+/*  
 	//change and display results - Change to opening a new page based on score
+	window.open ('farrah.html','_self',false)
 	document.getElementById("existing-iframe").src=vids[score];
 	document.getElementById("cresult").style.display="block";
 	document.getElementById("message").innerHTML = messages[score];
@@ -98,9 +103,7 @@ function check(){
 	var element = document.getElementById("cresult");
 	element.scrollIntoView({ behavior: 'smooth' });
 
-	console.log("You got "+correct+ " questions correct.");
-
-
+	console.log("You got "+correct+ " questions correct.");*/
 	
 	}
 	
