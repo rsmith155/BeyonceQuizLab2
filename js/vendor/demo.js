@@ -74,7 +74,7 @@ function check(){
 }
 	if (question6 == "Beyonce, Lativia, Nicky, Ashley, Nina, Kelly") {
 		correct++;
-		right.push("6");
+	
 } else {
 	wrong.push("6");
 }
