@@ -10,6 +10,9 @@ function info(){
 
 //Gets wrong answers and adds them to results pages
 		for (var answers in array){
+			if (array[answers]==6){
+				document.getElementById().remove("playerLabel");
+			}
 		var num="q"+String(array[answers]);
 		document.getElementById(String(num)).remove();
 		
