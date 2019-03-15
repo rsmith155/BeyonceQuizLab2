@@ -59,6 +59,9 @@ form#quiz {
     padding: 5%;
 }
 
+
+/* Results page music video formatting */
+
 html {
     overflow: hidden
 }
@@ -67,7 +70,7 @@ html, body{
     height: 100%
 }
 
-body{
+.results{
     overflow: hidden;
     overflow-y: auto;
     -webkit-perspective: 1px;
@@ -77,6 +80,7 @@ body{
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
 	background: 	#000000;
+	
 
 }
 
@@ -85,7 +89,7 @@ body{
 	/* Define the height of the container
     where the image will be */
     width: 100%;
-  height: 500px;
+  height: 450px;
 }
 
 .musicvideo{
@@ -129,6 +133,10 @@ h3 {
 	font-weight: 900px;
 	color:#FFFFFF;
 	font-size:2em;
+	text-align: center;
+	line-height: 1em;
+	margin: 0 0 0 0;
+	
 }
 
 p{
