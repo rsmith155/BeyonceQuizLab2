@@ -122,7 +122,7 @@ function check(){
 		holder+=[facts[wrong[property1]-1]]+"\n";
 	}
 	    localStorage.setItem('_holder', holder);
-		window.open ('flawless.html','_self',false);
+		window.open ('Flawless.html','_self',false);
 	}
 
 	if (correct == 6) {
