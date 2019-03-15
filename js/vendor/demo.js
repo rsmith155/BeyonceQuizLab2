@@ -66,7 +66,7 @@ function check(){
 		score = 3;
 		for (var property1 in wrong) {
 		holder+=[facts[wrong[property1]-1]]+"\n";
-		document.getElementById("information").innerHTML=holder;
+		document.getElementById("info").innerHTML=holder;
 }
 		window.open ('farrah.html','_self',false)
 	}
