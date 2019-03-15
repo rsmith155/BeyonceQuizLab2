@@ -1,6 +1,20 @@
 
 function info(){
 	document.getElementById("tips").innerHTML=localStorage.getItem("_holder");
+	var newRight=localStorage.getItem("_right");
+	var array = JSON.parse("[" + newRight + "]");
+	console.log("json "+array);
+	
+
+
+//put playlists in all things
+		for (var answers in array){
+			console.log(array[answers]);
+		var num="q"+String(array[answers]);
+		console.log(num);
+		document.getElementById(String(num)).remove();
+		
+	}
 }
 
 
@@ -14,6 +28,7 @@ function check(){
 	var question5 = document.quiz.Q5.value;
 	var question6 = document.quiz.Q6.value;
 	var correct = 0;
+	var right=[];
 	var holder = " ";
 	var wrong = [];
 
@@ -22,37 +37,48 @@ function check(){
 
 	if (question1 == "Virgo") {
 		correct++;
+		right.push("1");
 }   else {
 	     wrong.push("1");
 	 }
 
 	if (question2 == "Houston, TX") {
 		correct++;
+		right.push("2");
 }   else  {
 	wrong.push("2");
+	
 }
 	
 	if (question3 == "Hot Sauce") {
 		correct++;
+		right.push("3");
 }   else  {
-	wrong.push("3")
+	wrong.push("3");
+	
 }
 	if (question4 == "2003") {
 		correct++;
+		right.push("4");
 }   else {
 	wrong.push("4");
+	
 }
 
 	if (question5 == "Blue Ivy, Rumi and Sir") {
 		correct++;
+		right.push("5");
 }	else {
 	wrong.push("5");
+	
 }
 	if (question6 == "Beyonce, Lativia, Nicky, Ashley, Nina, Kelly") {
 		correct++;
+		right.push("6");
 } else {
 	wrong.push("6");
 }
+
 	
 
 //lists to hold different videos, titles and messages	
@@ -65,7 +91,10 @@ function check(){
 	" Beyoncé Giselle Knowles is from Houston, Texas.\n", " As quoted from her song “Formation,” she carries hot-sauce in her purse, a must have for a southerner in need of spice at any given time.\n", " She released her first solo album, Dangerously in Love (2003), during the hiatus of Destiny's Child.\n",
 	"Beyonce and Jay-Z, named their new daughter Rumi and son Sir -- even more distinctive names than the one they gave their first child, Blue Ivy. \n", "Formed in 1997 in Houston, Texas, Destiny's Child members began their musical career as Girl's Tyme, formed in 1990, comprising Knowles, Rowland, LaTavia Roberson, and LeToya Luckett.\n"];
 	var score;
-	var playlists =[]
+	var playlists =[];
+
+	localStorage.setItem("_wrong", wrong);
+	localStorage.setItem("_right", right);
 
 	//calculates score that corresponds to the list index of answers based on # of correct answers
 	if (correct <=2) {
