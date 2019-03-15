@@ -64,10 +64,6 @@ function check(){
 	//calculates score that corresponds to the list index of answers based on # of correct answers
 	if (correct <=2) {
 		score = 3;
-		for (var property1 in wrong) {
-		holder+=[facts[wrong[property1]-1]]+"\n";
-		document.getElementById("info").innerHTML=holder;
-}
 		window.open ('farrah.html','_self',false)
 	}
 
