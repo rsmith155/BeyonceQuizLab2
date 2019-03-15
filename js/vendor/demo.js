@@ -1,4 +1,9 @@
 
+function info(){
+	document.getElementById("tips").innerHTML=localStorage.getItem("_holder");
+}
+
+
 //function called when quiz is submitted
 function check(){
     //sets variables to equal the selected answers
@@ -9,7 +14,7 @@ function check(){
 	var question5 = document.quiz.Q5.value;
 	var question6 = document.quiz.Q6.value;
 	var correct = 0;
-	var holder= " ";
+	var holder = " ";
 	var wrong = [];
 
 
@@ -60,34 +65,44 @@ function check(){
 	" Beyoncé Giselle Knowles is from Houston, Texas.\n", " As quoted from her song “Formation,” she carries hot-sauce in her purse, a must have for a southerner in need of spice at any given time.\n", " She released her first solo album, Dangerously in Love (2003), during the hiatus of Destiny's Child.\n",
 	"Beyonce and Jay-Z, named their new daughter Rumi and son Sir -- even more distinctive names than the one they gave their first child, Blue Ivy. \n", "Formed in 1997 in Houston, Texas, Destiny's Child members began their musical career as Girl's Tyme, formed in 1990, comprising Knowles, Rowland, LaTavia Roberson, and LeToya Luckett.\n"];
 	var score;
+	var playlists =[]
 
 	//calculates score that corresponds to the list index of answers based on # of correct answers
 	if (correct <=2) {
 		score = 3;
-		window.open ('farrah.html','_self',false)
+		for (var property1 in wrong) {
+		holder+=[facts[wrong[property1]-1]]+"\n";
+	}
+	    localStorage.setItem('_holder', holder);
+	    window.open ('farrah.html','_self',false);
+		
 	}
 
 	if (correct == 3) {
 		score = 2;
 		for (var property1 in wrong) {
 		holder+=[facts[wrong[property1]-1]]+"\n";
-}
-		window.open ('michelle.html','_self',false)
+	}
+	    localStorage.setItem('_holder', holder);
+		window.open ('michelle.html','_self',false);
 	}
 
 	if (correct > 3 && correct < 6) {
 		score = 1;
 		for (var property1 in wrong) {
 		holder+=[facts[wrong[property1]-1]]+"\n";
-}
-		window.open ('flawless.html','_self',false)
+	}
+	    localStorage.setItem('_holder', holder);
+		window.open ('flawless.html','_self',false);
 	}
 
 	if (correct == 6) {
 		score = 0;
 		for (var property1 in wrong) {
 		holder+=[facts[wrong[property1]-1]]+"\n";
-		window.open ('BΔK .html','_self',false)
+	}
+	    localStorage.setItem('_holder', holder);
+		window.open ('BΔK .html','_self',false);
 	}
 
 /*  
