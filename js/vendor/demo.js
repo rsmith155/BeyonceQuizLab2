@@ -1,5 +1,5 @@
 
-//Displays extra info on results pages
+//Takes answers from index page and dynamically changes information on results pages
 function info(){
 	document.getElementById("tips").innerHTML=localStorage.getItem("_holder");
 	var newRight=localStorage.getItem("_right");
@@ -99,6 +99,7 @@ function check(){
 	localStorage.setItem("_right", right);
 
 	//calculates score that corresponds to the list index of answers based on # of correct/incorrect answers
+	//stores info needed for other pages in local storage
 	if (correct <=2) {
 		score = 3;
 		for (var property1 in wrong) {
