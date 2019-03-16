@@ -4,7 +4,13 @@ function info(){
 	document.getElementById("tips").innerHTML=localStorage.getItem("_holder");
 	var newRight=localStorage.getItem("_right");
 	var array = JSON.parse("[" + newRight + "]");
-	console.log("You got questions "+array + " correct.");
+
+	if (array.length==0){
+		console.log("You got no questions correct");
+	}
+	else{
+	console.log("You got question(s) "+array + " correct.");
+}
 	
 
 
